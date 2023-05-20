@@ -1,0 +1,16 @@
+# .gitignore
+
+# Ignore the virtual environment directory
+venv/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore SQLite database files, if you're storing the database locally
+# *.db
+
+
+
+
+# Install the required packages using pip install -r requirements.txt.
