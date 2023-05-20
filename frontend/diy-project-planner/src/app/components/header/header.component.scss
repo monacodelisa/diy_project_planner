@@ -1,0 +1,21 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 2rem;
+
+  h1 {
+    color: #fff;
+  }
+
+  a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0.5rem;
+    padding: 0.4rem 1rem;
+    border: 2px solid #fff;
+    border-radius: 0.3rem;
+  }
+}
