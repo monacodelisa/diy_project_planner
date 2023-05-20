@@ -1,5 +1,26 @@
+@import "../../../styles.scss";
+
+:host {
+  z-index: 5;
+}
+
 mat-toolbar {
+  background-color: $accent;
 	display: flex;
   align-items: center;
   justify-content: center;
+
+  p {
+    font-size: 0.9rem;
+    color: $primary;
+
+    a {
+      text-decoration: none;
+      color: $primary;
+
+      &:hover {
+        color: $accent-lighter;
+      }
+    }
+  }
 }
