@@ -1,6 +1,9 @@
+@import "../../../styles.scss";
+
 mat-toolbar {
+  background-color: $primary;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	text-transform: uppercase;
 	height: 2rem;
 	padding: 2.5rem 6rem;
