@@ -1,0 +1,48 @@
+@import "../../../styles.scss";
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0 6rem;
+
+  .heading {
+
+		h2 {
+      color: $primary;
+      font-weight: 600;
+			text-align: center;
+			text-transform: uppercase;
+			margin-top: 1rem;
+		}
+	}
+
+  mat-card {
+    width: 25vw;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 3rem 3rem;
+
+      mat-form-field {
+        margin: 0.5rem 0;
+      }
+
+      button {
+        text-transform: uppercase;
+        width: auto;
+        height: 2.25rem;
+        margin: 0 1rem;
+        border: 0.11rem solid $accent;
+        border-radius: 0.25rem;
+
+        &:hover {
+          background-color: $accent;
+          color: $accent-lighter;
+        }
+      }
+    }
+  }
+}
