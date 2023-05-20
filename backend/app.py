@@ -2,7 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db' # You can choose a different location
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///my_database.db' # You can choose a different location
 db = SQLAlchemy(app)
 
 class User(db.Model):
@@ -26,6 +26,11 @@ class Material(db.Model):
 
     project = db.relationship('Project', backref=db.backref('materials', lazy=True))
 
+@app.route('/')
+def index():
+    return 'Hello, Flask!'
+
 if __name__ == "__main__":
-    db.create_all()
-    app.run(debug=True)
+    with app.app_context():
+        db.create_all()
+        app.run(debug=True)
