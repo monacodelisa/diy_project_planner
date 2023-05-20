@@ -1,21 +1,28 @@
 mat-toolbar {
-  display: flex;
-  justify-content: space-between;
-  height: 5rem;
-  padding: 2rem;
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+	height: 2rem;
+	padding: 2.5rem 6rem;
 
-  h1 {
-    color: #fff;
-  }
+	.logo {
+		a {
+			text-decoration: none;
+			color: #fff;
+			h1 {
+			}
+		}
+	}
 
-  a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    margin: 0 0.5rem;
-    padding: 0.4rem 1rem;
-    border: 2px solid #fff;
-    border-radius: 0.3rem;
-  }
+	.nav {
+		a {
+			font-size: 1.1rem;
+			text-decoration: none;
+			color: #fff;
+			margin: 0 0.5rem;
+			padding: 0.4rem 1rem;
+			border: 2px solid #fff;
+			border-radius: 0.3rem;
+		}
+	}
 }
